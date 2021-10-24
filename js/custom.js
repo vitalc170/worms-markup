@@ -4,7 +4,7 @@ $(document).ready(function () {
         loop: true,
         items: 1,
         nav: true,
-        navText: ["<img src=\"../wp-content/themes/eco-worms/img/nav-prev.png\">", "<img src=\"../wp-content/themes/eco-worms/img/nav-next.png\">"]
+        navText: ["<img src=\"img/nav-prev.png\">", "<img src=\"img/nav-next.png\">"]
     });
 
 
@@ -13,7 +13,7 @@ $(document).ready(function () {
         margin: 20,
         nav: true,
         dots: false,
-        navText: ["<img src=\"../wp-content/themes/eco-worms/img/reviews-prev.png\">", "<img src=\"../wp-content/themes/eco-worms/img/reviews-next.png\">"],
+        navText: ["<img src=\"img/reviews-prev.png\">", "<img src=\"img/reviews-next.png\">"],
         responsive: {
             1000: {
                 items: 2
@@ -90,19 +90,19 @@ $(document).ready(function () {
             992: {
                 items: 3,
                 nav: false,
-                navText: ["<img src=\"" + document.location.origin + "/wp-content/themes/eco-worms/img/nav-prev.png\">", "<img src=\"" + document.location.origin + "/wp-content/themes/eco-worms/img/nav-next.png\">"],
+                navText: ["<img src=\"" + document.location.origin + "img/nav-prev.png\">", "<img src=\"" + document.location.origin + "img/nav-next.png\">"],
                 margin: 80,
             },
             768: {
                 items: 2,
                 nav: true,
-                navText: ["<img src=\"" + document.location.origin + "/wp-content/themes/eco-worms/img/ar_left.svg\">", "<img src=\"" + document.location.origin + "/wp-content/themes/eco-worms/img/ar_right.svg\">"],
+                navText: ["<img src=\"" + document.location.origin + "img/ar_left.svg\">", "<img src=\"" + document.location.origin + "img/ar_right.svg\">"],
             },
             0: {
                 items: 1,
                 nav: true,
                 margin: 20,
-                navText: ["<img src=\"" + document.location.origin + "/wp-content/themes/eco-worms/img/ar_left.svg\">", "<img src=\"" + document.location.origin + "/wp-content/themes/eco-worms/img/ar_right.svg\">"],
+                navText: ["<img src=\"" + document.location.origin + "img/ar_left.svg\">", "<img src=\"" + document.location.origin + "img/ar_right.svg\">"],
             }
         },
     });
@@ -113,7 +113,7 @@ $(document).ready(function () {
         loop: true,
         items: 1,
         nav: true,
-        navText: ["<img src=\"" + document.location.origin + "/wp-content/themes/eco-worms/img/nav-prev.png\">", "<img src=\"" + document.location.origin + "/wp-content/themes/eco-worms/img/nav-next.png\">"],
+        navText: ["<img src=\"" + document.location.origin + "img/nav-prev.png\">", "<img src=\"" + document.location.origin + "img/nav-next.png\">"],
     });
 
     function incrementValue(e) {

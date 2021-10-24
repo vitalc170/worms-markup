@@ -148,12 +148,12 @@ BACKGROUND FOR PAGE
 }
 
 .main-page .main-area-with-bg {
-    background: url("/img/main-bg.jpg") no-repeat;
+    background: url("../img/main-bg.jpg") no-repeat;
     background-size: cover;
 }
 
 .single-page .main-area-with-bg {
-    background: url("/img/main-bg.jpg") no-repeat;
+    background: url("../img/main-bg.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -517,7 +517,7 @@ section.choose-worm .container {
 }
 
 /*.main-product .main-prod-wrapper.central-prod {*/
-/*    background-image: url("/img/shadow.png");*/
+/*    background-image: url("../img/shadow.png");*/
 /*    background-repeat: no-repeat;*/
 /*    background-size: cover;*/
 /*    padding-bottom: 80px;*/
@@ -613,7 +613,7 @@ SINGLE PAGE
 BANNER AREA
 --------------------------------------------------*/
 .banner-area {
-    background: url("/img/page-banner.jpg") no-repeat;
+    background: url("../img/page-banner.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -722,11 +722,11 @@ PRODUCT DESCRIPTION
 }
 
 .description-right-area.prod-11 {
-    background-image: url("/img/staratel_icon_red.svg");
+    background-image: url("../img/staratel_icon_red.svg");
 }
 
 .description-right-area.prod-22 {
-    background-image: url("/img/dendrobena_icon_red.svg");
+    background-image: url("../img/dendrobena_icon_red.svg");
 }
 
 .price-wrapper {
@@ -875,7 +875,7 @@ FISH SLIDER SECTION
 
 .fish-wide {
     padding: 40px 130px 66px 130px;
-    background: url("/img/bg-fish.png") no-repeat bottom left;
+    background: url("../img/bg-fish.png") no-repeat bottom left;
     background-size: contain;
 }
 
@@ -1152,7 +1152,7 @@ FOOTER
 }
 
 .footer-page-list li:before {
-    content: url("/img/bullet.svg");
+    content: url("../img/bullet.svg");
     width: 7px;
     height: 10px;
     padding-right: 10px;
@@ -1933,7 +1933,7 @@ article#post-9 {
 
 .description-right-area.outofstock:before {
     content: "";
-    background: url(/img/outofstock.png) no-repeat;
+    background: url(../img/outofstock.png) no-repeat;
     background-size: contain;
     display: block;
     width: 70%;
