@@ -1,0 +1,1095 @@
+@font-face {
+    font-family: 'Gilroy-Heavy';
+    src: url('../fonts/Gilroy-Heavy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy-Black';
+    src: url('../fonts/Gilroy-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('../fonts/Gilroy-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('../fonts/Gilroy-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MyriadPro-Bold';
+    src: url('../fonts/MyriadPro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+}
+
+
+/*------------------------------------------------
+GLOBAL STYLES
+--------------------------------------------------*/
+html, body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: 'Gilroy-Black';
+}
+
+h2 {
+    font-family: 'Gilroy-Heavy';
+    font-size: 36px;
+}
+
+h3 {
+    font-family: 'Gilroy-Black';
+    font-size: 36px;
+}
+
+h4 {
+    font-family: 'MyriadPro-Bold';
+    font-size: 22px;
+}
+
+h5 {
+    font-family: 'MyriadPro-Regular';
+    font-size: 22px;
+}
+
+
+p {
+    font-family: 'MyriadPro-Regular';
+    font-size: 16px;
+}
+
+
+ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    font-family: 'Gilroy-Heavy';
+    font-size: 18px;
+}
+
+a:hover {
+    color: none;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.button-area {
+    text-align: center;
+}
+
+.button-action {
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+    line-height: 1;
+    padding: 16px 22px 14px 22px;
+    background: #9d3522;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.button-action:hover {
+    color: #fff;
+}
+
+/*------------------------------------------------
+BACKGROUND FOR PAGE
+--------------------------------------------------*/
+.main-area-with-bg {
+    border-top: 7px solid #191515;
+}
+
+.main-page .main-area-with-bg {
+    background: url("../img/main-bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+.single-page .main-area-with-bg {
+    background: url("../img/main-bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+.contact-page .main-area-with-bg {
+    background: #292120;
+}
+
+/*------------------------------------------------
+HEADER
+--------------------------------------------------*/
+header {
+    background: #191515;
+}
+
+.main-page-header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.wrapp-top-area-header {
+    padding-top: 60px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #a03624;
+}
+
+.phone-numbers {
+    color: #fff;
+    font-family: 'Gilroy-Black';
+    font-size: 30px;
+    padding: 0px 12px;
+    border: 2px solid #fff;
+    margin-right: 6px;
+    margin-left: 13px;
+    line-height: 1.5;
+}
+
+.header-mini-cart {
+    margin-left: 5px;
+}
+
+.header-social i {
+    color: #fff;
+    padding-left: 13px;
+    font-size: 52px;
+}
+
+.main-menu-list {
+    padding-top: 30px;
+}
+
+.main-menu-list .main-menu-item {
+
+    padding-right: 46px;
+}
+
+.main-menu-list .main-menu-item:first-child {
+    padding-right: 21px;
+}
+
+.main-menu-list .main-menu-item a {
+    color: #fff;
+    font-family: 'Gilroy-Black';
+    font-size: 18px;
+    border: 2px solid transparent;
+    line-height: 1;
+    padding: 8px 0;
+}
+
+.main-menu-list .main-menu-item:hover a {
+    color: #9e3522;
+}
+
+.main-menu-list .main-menu-item.production {
+    padding-right: 13px;
+    position: relative;
+}
+
+.main-menu-list .main-menu-item.production a {
+    padding-left: 23px;
+    padding-right: 31px;
+}
+
+.main-menu-list .main-menu-item.production .sub-list {
+    display: none;
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding-right: 13px;
+}
+
+.main-menu-list .main-menu-item.production:hover .sub-list {
+    display: block;
+}
+
+.main-menu-list .main-menu-item.production:hover a {
+    border: 2px solid #9e3522;
+}
+
+.main-menu-list .sub-list li {
+    margin-top: 3px;
+    text-transform: uppercase;
+    background: #9d3522;
+}
+
+.main-menu-list .main-menu-item.production .sub-list a {
+    /*padding-right: 10px;*/
+    padding: 8px 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.main-menu-list .main-menu-item.production .sub-list li a {
+    border: none;
+}
+
+.main-menu-list .main-menu-item.production .sub-list li:hover a {
+    color: #000;
+    background: #833221;
+}
+
+.burger-mobile {
+    display: none;
+}
+
+.mobile-menu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    right: 120%;
+}
+
+/*------------------------------------------------
+HOME PAGE
+--------------------------------------------------*/
+/*------------------------------------------------
+HOME BANNER
+--------------------------------------------------*/
+.wrapp-slides {
+    position: relative;
+}
+
+.wrapp-slides.owl-carousel {
+    overflow: hidden;
+}
+
+.main-page-slider {
+    overflow: hidden;
+}
+
+.wrapp-slides .owl-nav {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-stage {
+    overflow: hidden;
+}
+
+.wrapp-slides .owl-dots {
+    position: absolute;
+    width: fit-content;
+    bottom: 25px;
+    left: 50%;
+}
+
+.wrapp-slides .owl-dots button {
+    width: 8px;
+    height: 8px;
+    color: #fff;
+    background: #fff;
+    border-radius: 25px;
+    margin-right: 4px;
+}
+
+.wrapp-slides .owl-dots button {
+    width: 8px;
+    height: 8px;
+    color: #fff;
+    background: #fff;
+    border-radius: 25px;
+    margin-right: 4px;
+}
+
+.wrapp-slides .owl-dots .owl-dot.active {
+    width: 15px;
+    height: 15px;
+}
+
+.wrapp-slides.owl-carousel .owl-item .banner-images {
+    height: 597px !important;
+}
+
+/*------------------------------------------------
+CHOOSE WORM
+--------------------------------------------------*/
+.choose-worm .offer-text {
+    padding-bottom: 34px;
+    border-bottom: 1px solid #1d1919;
+}
+
+.choose-worm .offer-text h2 {
+    color: #d5c7bf;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    padding-top: 36px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+.choose-worm .offer-text h2 span {
+    color: #9d3220;
+}
+
+.choose-worm .offer-text h4 {
+    color: #191515;
+    text-align: center;
+}
+
+.main-product .main-prod-wrapper {
+    text-align: center;
+}
+
+.main-product .main-prod-wrapper img {
+    height: 166px;
+    margin-bottom: 55px;
+}
+
+.main-product {
+    padding-top: 90px;
+}
+
+.main-product .main-prod-wrapper h3 {
+    padding-bottom: 28px;
+    color: #000;
+    font-size: 30px;
+}
+
+.main-product .main-prod-wrapper.central-prod h3 {
+    color: #fff;
+    font-size: 36px;
+}
+
+.main-product .main-prod-wrapper.central-prod p {
+    color: #d8d8d8;
+}
+
+.main-product .main-prod-wrapper p {
+    color: #1e1b1b;
+    font-family: "MyriadPro-Bold";
+    padding-bottom: 28px;
+    max-width: 38ch;
+    margin: 0 auto;
+}
+
+.main-product .main-prod-wrapper a {
+    color: #2f0700;
+    font-family: "Gilroy-Black";
+    font-size: 16px;
+    padding-bottom: 80px;
+}
+
+.main-product .main-prod-wrapper.central-prod {
+    background-image: url("../img/shadow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 80px;
+}
+
+.main-product .main-prod-wrapper.central-prod a {
+    color: #9d3522;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #9d3522;
+}
+
+/*------------------------------------------------
+REVIEWS AREA
+--------------------------------------------------*/
+.clients-reviews .about-us-says {
+    padding-top: 28px;
+    padding-bottom: 50px;
+    border-top: 1px solid #1d1919;
+}
+
+.clients-reviews .customers-reviews {
+    padding: 0 76px;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.clients-reviews .about-us-says h4 {
+    text-align: center;
+    color: #191515;
+    text-transform: uppercase;
+}
+
+.clients-reviews .left-side {
+    padding-bottom: 24px;
+    margin-right: 28px;
+}
+
+.clients-reviews .left-side img {
+    border: 6px solid #533f2e;
+
+}
+
+.clients-reviews .left-side h4 {
+    color: #1a1616;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 12px;
+}
+
+.clients-reviews .left-side p {
+    color: #9d3522;
+    text-align: center;
+}
+
+.clients-reviews .right-side {
+    text-align: center;
+}
+
+.clients-reviews .right-side p {
+    font-family: "Gilroy-Bold";
+    font-size: 16px;
+    color: #1a1615;
+    padding-top: 28px;
+    padding-bottom: 35px;
+}
+
+.clients-reviews .right-side .review-stars {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.clients-reviews .right-side .review-stars img {
+    width: fit-content;
+    text-align: center;
+}
+
+.customers-reviews .owl-nav {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: -1;
+}
+
+
+/*------------------------------------------------
+SINGLE PAGE
+--------------------------------------------------*/
+/*------------------------------------------------
+BANNER AREA
+--------------------------------------------------*/
+.banner-area {
+    background: url("../img/page-banner.jpg") no-repeat;
+    background-size: cover;
+}
+
+.banner-area h1 {
+    color: #fff;
+    padding-top: 52px;
+    padding-bottom: 46px;
+    text-transform: uppercase;
+}
+
+.banner-area h1 span {
+    color: #9d3522;
+}
+
+/*------------------------------------------------
+PRODUCT DESCRIPTION
+--------------------------------------------------*/
+.best-worm-prod-page {
+    padding-top: 28px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.best-worm-prod-page h4 {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+}
+
+.best-worm-prod-page p {
+    color: #a19d9b;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.top-area-prod-descript {
+    padding-top: 30px;
+}
+
+.top-area-prod-descript .photo-left-area {
+    display: flex;
+    flex-direction: row;
+}
+
+.top-area-prod-descript .photo-left-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-prod-photo {
+    width: 79%;
+    padding-right: 1%;
+}
+
+.additional-photo {
+    width: 20%;
+    height: 25%;
+}
+
+.additional-photo img {
+    border: 5px solid #666262;
+}
+
+.additional-photo .change-photo-wrapper {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.additional-photo .change-photo-wrapper:after {
+    position: absolute;
+    background: #4c4848;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+}
+
+.additional-photo .change-photo-wrapper.active:after {
+    display: none;
+}
+
+.additional-photo a:last-child {
+    /*margin-bottom: 0;*/
+}
+
+.description-right-area {
+    float: right;
+    background: url("../img/single-worm.png") no-repeat;
+}
+
+.price-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-bottom: 28px;
+}
+
+.price-wrapper span {
+    line-height: 0.85;
+}
+
+.price-wrapper .price {
+    font-family: "Gilroy-Black";
+    font-size: 48px;
+    color: #fff;
+}
+
+.price-wrapper .currency {
+    font-family: "Gilroy-Black";
+    font-size: 36px;
+    color: #666262;
+}
+
+.weight-wrapper p {
+    font-family: "Gilroy-Black";
+    font-size: 24px;
+    color: #fff;
+}
+
+.weight-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.weight-wrapper p span {
+    color: #666262;
+    margin-left: 18px;
+}
+
+.description-right-area h2 {
+    font-family: 'Gilroy-Black';
+    font-size: 68px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #666262;
+    line-height: 0.85;
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+
+.description-right-area h2 span {
+    color: #9d3522;
+}
+
+.buy-area-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-action-buy {
+    background: #9d3522;
+    padding: 16px 90px;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 7px solid #000;
+    font-family: "MyriadPro-Bold";
+    font-size: 24px;
+    line-height: 1;
+}
+
+.button-action-buy:hover {
+    color: #000;
+}
+
+.bottom-characteristics {
+    padding-top: 58px;
+}
+
+.bottom-characteristics h4 {
+    padding-bottom: 18px;
+    color: #cdcdcd;
+    font-size: 18px;
+}
+
+.left-side-bullet-list {
+    padding-top: 30px;
+}
+
+.left-side-bullet-list ul li {
+    font-family: "MyriadPro-Bold";
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 8px;
+}
+
+.left-side-bullet-list ul li i {
+    font-size: 2px;
+    color: #9e3522;
+    padding-right: 8px;
+}
+
+.description-main-text p {
+    font-size: 18px;
+    color: #b7b7b7;
+    line-height: 1.8;
+}
+
+
+/*------------------------------------------------
+FISH SLIDER SECTION
+--------------------------------------------------*/
+.fish-slider .fish-slider-header {
+    padding-top: 24px;
+    margin-top: 90px;
+    border-top: 1px solid #c2c2c2;
+}
+
+.fish-slider h5 {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.fish-slider p {
+    color: #d7d7b8;
+    font-size: 18px;
+    text-align: center;
+}
+
+.fish-wide {
+    padding: 40px 130px 66px 130px;
+    background: url("../img/bg-fish.png") no-repeat bottom left;
+    background-size: contain;
+}
+
+.fish-wide .owl-nav.disabled {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    left: 0;
+    top: 35%;
+    position: absolute;
+    z-index: -1;
+}
+
+.fish-wide .owl-nav.disabled button {
+    opacity: 0.5;
+}
+
+.fish-wide .owl-nav.disabled button:hover {
+    opacity: 1;
+}
+
+.wrapp-fish-wide img {
+    padding-bottom: 10px;
+    height: 140px;
+}
+
+.wrapp-fish-wide h4 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 13px;
+    border-bottom: 5px dotted #a03826;
+}
+
+.wrapp-fish-wide p {
+    padding-top: 16px;
+    font-family: "Gilroy-Bold";
+    font-size: 14px;
+}
+
+
+/*------------------------------------------------
+ABOUT US PAGE
+--------------------------------------------------*/
+.short-info-about {
+    padding-top: 66px;
+    padding-bottom: 46px;
+
+}
+
+.short-info-about h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #191515;
+    padding-bottom: 55px;
+}
+
+.short-info-about p {
+    font-family: "Gilroy-Black";
+    font-size: 24px;
+    color: #191515;
+    text-align: center;
+    padding: 0 15%;
+}
+
+.photo-about-slider {
+    padding: 12px 120px;
+    border-top: 2px solid #1d1919;
+    border-bottom: 2px solid #1d1919;
+}
+
+.photo-about-slider .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    padding: 12px 0;
+}
+
+.photo-about-slider .owl-dots {
+    display: none;
+}
+
+.photo-about-slider .owl-nav button {
+    width: 9%;
+}
+
+.photo-about-slider .owl-nav button img {
+    opacity: 0.5;
+}
+
+.photo-about-slider .owl-nav button.owl-prev {
+    -webkit-box-shadow: inset -32px 0px 50px -14px rgba(0, 0, 0, 0.4);
+    box-shadow: inset -32px 0px 50px -14px rgba(0, 0, 0, 0.4);
+}
+
+.photo-about-slider .owl-nav button.owl-next {
+    -webkit-box-shadow: inset 32px 0px 50px -14px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 32px 0px 50px -14px rgba(0, 0, 0, 0.4);
+}
+
+.photo-about-slider .owl-nav button img:hover {
+    opacity: 1;
+}
+
+.slider-about-us p {
+    font-family: "Gilroy-SemiBold";
+    font-size: 20px;
+    color: #aeac9c;
+    padding: 24px 15%;
+    text-align: center;
+}
+
+.slogan-text .container {
+    position: relative;
+    height: 100%;
+}
+
+.slogan-text {
+    height: 350px;
+}
+.slogan-text img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -125px;
+}
+
+.slogan-text h2 {
+    text-align: center;
+    color: #fff;
+    padding-top: 14%;
+    z-index: 1;
+}
+
+
+/*------------------------------------------------
+CONTACT PAGE
+--------------------------------------------------*/
+
+.send-us-mail h4{
+    color: #5f5b5b;
+    text-align: center;
+    padding-top: 24px;
+}
+.send-us-mail p{
+    color: #9d3220;
+    text-align: center;
+    padding: 22px 18% 55px 18%;
+}
+.send-us-mail .contact-header-text{
+    border-bottom: 1px solid #c2c2c2;
+}
+.mail-fields{
+    padding-top: 60px;
+}
+.mail-fields .top-text-contact h4{
+    color: #fff;
+}
+.mail-fields .top-text-contact p{
+    padding-top: 28px;
+    color: #8f8f8f;
+    line-height: 2;
+}
+
+.right-side-contact-info h4{
+    color: #9d3220;
+    font-size: 18px;
+    padding-bottom: 28px;
+}
+.right-side-contact-info p{
+    color: #8f8f8f;
+}
+.right-side-contact-info .where-we-are p{
+    padding-bottom: 32px;
+}
+
+.right-side-contact-info .contacts-info{
+    padding-top: 18px;
+    padding-bottom: 48px;
+}
+.right-side-contact-info .info-wrapp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-side-contact-info .additional-time-text{
+    padding-top: 32px;
+    color: #fff;
+}
+
+
+/*------------------------------------------------
+FOOTER
+--------------------------------------------------*/
+.follow-us-wrapper {
+    padding-top: 32px;
+    border-top: 1px solid #c2c2c2;
+    padding-bottom: 60px;
+}
+
+.follow-us-wrapper h5 {
+    text-align: center;
+    color: #d7d7b8;
+    margin-bottom: 28px;
+}
+
+.follow-us-wrapper h5:first-child {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.follow-us-wrapper p {
+    color: #9b9999;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.footer {
+    background: #1a1616;
+    padding-top: 60px;
+}
+
+.top-footer {
+    padding-bottom: 60px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #9b9999;
+}
+
+.footer h5 {
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+.about-company-footer-area img {
+    padding-bottom: 34px;
+    width: 230px;
+}
+
+.contact-footer-area p {
+    line-height: 2;
+}
+
+.contact-footer-area a {
+    margin-top: 12px;
+}
+
+.contact-footer-area .phone-number-footer {
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer-page-list li a {
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+    color: #9b9999;
+}
+
+.footer-page-list li:before {
+    content: url("../img/bullet.svg");
+    width: 7px;
+    height: 10px;
+    padding-right: 10px;
+}
+
+.footer-send-email .social-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-send-email .social-links i {
+    padding-left: 12px;
+}
+
+.footer-send-email .social-links h5 {
+    padding-right: 12px;
+    padding-bottom: 38px;
+}
+
+.footer-send-email input[type="email"] {
+    background: #4e4c4c;
+    border: none;
+    padding: 16px 16px 14px 16px;
+    color: #fff;
+    outline: 0;
+}
+
+.footer-send-email input[type="email"]::placeholder {
+    color: #fff;
+}
+
+.footer-send-email button {
+    -webkit-appearance: none;
+    border: none;
+    padding: 16px 20px 14px 15px;
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-footer {
+    padding-top: 30px;
+    border-top: 1px solid #808080;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.bottom-footer p {
+    text-transform: uppercase;
+    color: #808080;
+    font-size: 12px;
+}
+
+.bottom-footer p span {
+    color: #fff;
+}
+
+.policy-pages ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.policy-pages ul li a {
+    color: #808080;
+    font-family: 'MyriadPro-Regular';
+    font-size: 12px;
+}
+
+.policy-pages ul li:after {
+    content: "/";
+    color: #808080;
+    margin: 0 5px;
+}
+
+.policy-pages ul li:last-child:after {
+    content: none;
+}

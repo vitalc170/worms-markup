@@ -1,0 +1,212 @@
+@media (max-width: 992px) {
+    .main-page-header .header-social, .main-page-header .phone-numbers, .main-page-header .phone-header {
+        display: none;
+    }
+
+    .burger-mobile {
+        display: block;
+        color: #fff;
+        padding-left: 31px;
+        font-size: 56px;
+        line-height: 0.5;
+    }
+
+    .mobile-menu.show {
+        visibility: visible;
+        opacity: 1;
+        position: fixed;
+        z-index: 3;
+        width: 30vh;
+        top: 0;
+        right: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: #4e3a37;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .mobile-menu .close-mobile-menu {
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .mobile-menu .contact-icons a, .mobile-menu .contact-icons p {
+        display: block;
+    }
+
+    .header-social-mobile-wrapp {
+        margin-bottom: 25px;
+        justify-content: center;
+    }
+
+    .mobile-menu .contact-icons .phone-numbers {
+        font-size: 24px;
+    }
+
+    .main-menu-mobile-list a {
+        color: #fff;
+        padding-bottom: 14px;
+    }
+
+    .main-menu-mobile-list .main-menu-item.production .sub-list {
+        display: none;
+        padding-left: 10px;
+    }
+
+    .main-menu-mobile-list .main-menu-item.production .sub-list.show {
+        display: block;
+    }
+
+    .main-menu-mobile-list .main-menu-item.production .sub-list a {
+        color: #9d3522;
+        text-transform: uppercase;
+    }
+
+    nav.main-menu {
+        display: none;
+    }
+
+    .main-product .main-prod-wrapper.central-prod {
+        margin-bottom: 80px;
+    }
+
+    .about-company-footer-area img {
+        width: 100%;
+    }
+    .description-right-area h2{
+        font-size: 46px;
+    }
+    .buy-area-wrapper{
+        flex-direction: column;
+    }
+    .button-action-buy{
+        padding: 16px 50px;
+        margin-top: 15px;
+    }
+    .top-area-prod-descript .photo-left-area{
+        flex-direction: column;
+    }
+    .main-prod-photo{
+        width: 100%;
+        padding-right: 0;
+    }
+    .top-area-prod-descript .photo-left-area .main-prod-photo img{
+        height: 300px;
+    }
+    .additional-photo{
+        padding-top: 25px;
+        display: flex;
+        width: unset;
+        height: unset;
+    }
+    .photo-about-slider{
+        padding: 12px 0;
+    }
+    .photo-about-slider .owl-nav{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapp-slides.owl-carousel .owl-item .banner-images{
+        height: 470px !important;
+    }
+    .wrapp-slides .owl-nav{
+        top: 85%;
+    }
+    .customers-reviews .review-wrapper{
+        flex-direction: column;
+    }
+    .clients-reviews .left-side{
+        margin-right: 0;
+    }
+    .clients-reviews .left-side img{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .customers-reviews .owl-nav{
+        width: 90%;
+        left: 5%;
+        top: 40%;
+    }
+    .clients-reviews .left-side h4{
+        color: #d7d7b8;
+    }
+    .clients-reviews .right-side p{
+        color: #9b9999;
+    }
+    .follow-us-wrapper{
+        border-top: 2px solid #34312b;
+    }
+    .about-company-footer-area {
+        margin-bottom: 25px;
+    }
+    .footer-send-email{
+        padding-top: 25px;
+    }
+    .footer h5{
+        padding-bottom: 15px;
+    }
+    .fish-wide .owl-nav.disabled{
+        display: none;
+    }
+    .fish-wide{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .description-right-area{
+        margin-top: 25px;
+    }
+    .wrapp-fish-wide img{
+        object-fit: contain;
+    }
+
+    .short-info-about p{
+        padding: 0 5%;
+    }
+    .slider-about-us p{
+        padding: 24px 5%;
+    }
+
+}
+
+@media (max-width: 570px) {
+    .footer-pages{
+        padding-top: 25px;
+    }
+    .logo-area img {
+        width: 170px;
+    }
+    .wrapp-slides .owl-nav{
+        display: none;
+    }
+}
+
+@media (max-width: 510px) {
+    .mobile-menu.show {
+        width: 80%;
+    }
+    .bottom-footer{
+        flex-direction: column-reverse;
+    }
+    .policy-pages ul{
+        padding-bottom: 15px;
+    }
+    .wrapp-slides.owl-carousel .owl-item .banner-images{
+        height: 400px !important;
+    }
+    .clients-reviews .right-side p{
+        font-size: 14px;
+    }
+    .clients-reviews .customers-reviews{
+        padding: 0 10px;
+    }
+    .customers-reviews .owl-nav{
+        display: none;
+    }
+}
