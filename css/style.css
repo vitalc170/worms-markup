@@ -1144,11 +1144,17 @@ FOOTER
     color: #fff;
     font-size: 16px;
 }
-
+.footer-page-list li{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: start;
+}
 .footer-page-list li a {
     font-family: 'MyriadPro-Regular';
     font-size: 14px;
     color: #9b9999;
+    padding-left: 10px;
 }
 
 .footer-page-list li:before {

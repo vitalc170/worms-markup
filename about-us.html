@@ -17,20 +17,24 @@
     <title>Title</title>
 </head>
 <body class="single-page">
-<header class="main-page-header">
+<header class="header">
     <div class="top-area-header">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="wrapp-top-area-header d-flex justify-content-between align-items-center">
+                        <a class="burger-mobile" href="#"><i class="fas fa-bars"></i></a>
                         <div class="logo-area">
-                            <a href="#"><img src="img/logo.png" alt=""></a>
+                            <a href="index.html"><img
+                                    src="img/logo.svg"
+                                    alt=""></a>
                         </div>
                         <div class="contact-header-area d-flex">
-                            <a class="header-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="header-social" href="#"><i
+                                    class="fab fa-facebook-f"></i></a>
                             <a class="header-social" href="#"><i class="fab fa-whatsapp"></i></a>
-                            <p class="phone-numbers">097 062 7 555</p>
-                            <a class="phone-header" href="#">
+                            <p class="phone-numbers">095 111 11 111</p>
+                            <a class="phone-header" href="tel:095 111 11 11">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                      xmlns:xlink="http://www.w3.org/1999/xlink"
                                      width="1.411cm" height="1.411cm">
@@ -39,15 +43,35 @@
                                 </svg>
                             </a>
                             <a class="header-mini-cart" href="#">
-                                <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        width="1.411cm" height="1.411cm">
-                                    <image x="0px" y="0px" width="100%" height="100%"
-                                           xlink:href="data:img/png;base64,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"/>
-                                </svg>
+	                            <span class="cart-counter">
+                                    1                                </span>
+                                <img src="img/korzina.svg" alt="">
+
                             </a>
-                            <a class="burger-mobile" href="#"><i class="fas fa-bars"></i></a>
+                            <div class="mini-cart-header">
+
+
+                                <ul class="woocommerce-mini-cart cart_list product_list_widget ">
+                                    <li class="woocommerce-mini-cart-item mini_cart_item">
+                                        <!--					--> <a
+                                            href="single-product.html?attribute_pa_%25d0%25b2%25d0%25b0%25d0%25b3%25d0%25b0=25%25d0%25b3">
+                                        Дендробена - 25г:
+                                    </a>
+                                        <span class="quantity"><span class="quan">1 шт. </span> 7220 грн</span></li>
+                                </ul>
+
+                                <p class="woocommerce-mini-cart__total total">
+                                    <strong>Разом:</strong> <span class="woocommerce-Price-amount amount"><bdi><span
+                                        class="woocommerce-Price-currencySymbol">&#8372;</span>20</bdi></span> грн
+                                </p>
+
+                                <!--	--><!---->
+                                <!--    <p class="woocommerce-mini-cart__buttons buttons">--><!--</p>-->
+                                <!---->
+                                <!--	-->
+
+                            </div>
+
 
                         </div>
                     </div>
@@ -57,15 +81,22 @@
             <nav class="main-menu">
                 <div class="row">
                     <ul class="main-menu-list d-flex">
-                        <li class="main-menu-item"><a href="#">ГОЛОВНА</a></li>
+                        <li class="main-menu-item"><a href="index.html">ГОЛОВНА</a></li>
                         <li class="main-menu-item production"><a href="#">ПРОДУКЦІЯ</a>
                             <ul class="sub-list">
-                                <li><a href="#" class="sublist-item">дендробена</a></li>
-                                <li><a href="#" class="sublist-item">старатель</a></li>
+                                <li>
+                                    <a href="single-product.html"
+                                       class="sublist-item">дендробена</a></li>
+                                <li>
+                                    <a href="single-product.html"
+                                       class="sublist-item">старатель</a></li>
                             </ul>
                         </li>
-                        <li class="main-menu-item"><a href="#">ПРО НАС</a></li>
-                        <li class="main-menu-item"><a href="#">КОНТАКТИ</a></li>
+                        <li class="main-menu-item"><a
+                                href="about-us.html">ПРО НАС</a></li>
+                        <li class="main-menu-item"><a
+                                href="contact.html">КОНТАКТИ</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -75,26 +106,44 @@
 </header>
 
 <div class="mobile-menu">
-
+    <div class="heading-block">
+        <a href="index.html">
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="72px" height="65px">
+                <image x="0px" y="0px" width="72px" height="65px"
+                       xlink:href="data:img/png;base64,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"/>
+            </svg>
+        </a>
+        <a href="#" class="close-mobile-menu">MENU</a>
+    </div>
     <ul class="main-menu-mobile-list d-flex flex-column">
-        <a href="#" class="close-mobile-menu"><i class="fas fa-times"></i></a>
+        <!--        <a href="#" class="close-mobile-menu"><i class="fas fa-times"></i></a>-->
         <li class="main-menu-item"><a href="#">ГОЛОВНА</a></li>
-        <li class="main-menu-item production"><a href="#">ПРОДУКЦІЯ</a>
+        <li class="main-menu-item production"><a class="prod-link" href="#">ПРОДУКЦІЯ</a>
             <ul class="sub-list">
-                <li><a href="#" class="sublist-item">дендробена</a></li>
-                <li><a href="#" class="sublist-item">старатель</a></li>
+                <li>
+                    <a href="single-product.html"
+                       class="sublist-item">дендробена</a></li>
+                <li><a href="single-product.html"
+                       class="sublist-item">старатель</a></li>
             </ul>
         </li>
-        <li class="main-menu-item"><a href="#">ПРО НАС</a></li>
-        <li class="main-menu-item"><a href="#">КОНТАКТИ</a></li>
+        <li class="main-menu-item"><a href="about-us.html">ПРО НАС</a>
+        </li>
+        <li class="main-menu-item"><a
+                href="contact.html">КОНТАКТИ</a>
+        </li>
     </ul>
     <div class="contact-icons">
         <div class="header-social-mobile-wrapp d-flex">
-            <a class="header-social" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="header-social" href="#"><i
+                    class="fab fa-facebook-f"></i></a>
             <a class="header-social" href="#"><i class="fab fa-whatsapp"></i></a>
         </div>
 
-        <p class="phone-numbers">097 062 7 555</p>
+        <p class="phone-numbers">095 111 11 111</p>
     </div>
 
 </div>
@@ -102,6 +151,7 @@
 <div class="wrapper">
 
     <div class="main">
+
 
         <section class="banner-area">
             <div class="container">
@@ -119,9 +169,10 @@
                     <div class="row">
                         <h1>"eco-worms"</h1>
                         <p>Ферма яка, діє на ринку впродовж трьох років. Ми займаємося розведенням черв'яків типу
-                            Дендробена та Старатель, які ідеально підходять в якості приманки. В результаті
-                            багаторічного досвіду, наші приманки відрізняються високою якістю і найчастіше купуються
-                            рибалками.</p>
+                            Дендробена та
+                            Старатель, які ідеально підходять в якості приманки. В результаті багаторічного досвіду,
+                            наші
+                            приманки відрізняються високою якістю і найчастіше купуються рибалками..</p>
                     </div>
                 </div>
             </section>
@@ -130,18 +181,25 @@
                 <div class="container">
                     <div class="row">
                         <div class="photo-about-slider owl-carousel">
-                            <img src="img/about-us-slider1.jpg" alt="">
-                            <img src="img/about-us-slider1.jpg" alt="">
-                            <img src="img/about-us-slider1.jpg" alt="">
+                            <img src="img/about-us-slider-1.jpg"
+                                 alt="">
+                            <img src="img/about-us-slider-2.jpg"
+                                 alt="">
+                            <img src="img/about-us-slider-3.jpg"
+                                 alt="">
                         </div>
                     </div>
 
                     <p>Спеціально виведені види черв’яків для використання в якості супер-наживки для лову середньої і
-                        великої риби. Мають добре розвинену мускулатуру та довго тримаються на гачку в активному стані,
-                        чим приваблює безліч риб. Головною перевагою є дуже висока щільність шкіри, завдяки тому вони не
-                        по зубам дрібній рибі. Специфічний запах, який виділяють наші черв’яки забезпечує хороше
-                        клювання. Використовуються в будь-яку пору року, адже є стійкими до низьких температур та здатні
-                        нормально переносити солону воду.</p>
+                        великої
+                        риби. Мають добре розвинену мускулатуру та довго тримаються на гачку в активному стані, чим
+                        приваблює
+                        безліч риб. Головною перевагою є дуже висока щільність шкіри, завдяки тому вони не по зубам
+                        дрібній
+                        рибі. Специфічний запах, який виділяють наші черв’яки забезпечує хороше клювання.
+                        Використовуються в
+                        будь-яку пору року, адже є стійкими до низьких температур та здатні нормально переносити солону
+                        воду.</p>
                 </div>
             </section>
 
@@ -149,7 +207,7 @@
                 <div class="container">
                     <div class="row">
                         <h2>Черв’яки «eco-worms» - найкращий вибір рибалки!</h2>
-                        <img src="img/bottom-worm.png" alt="">
+                        <img src="img/wormik.png" alt="">
                     </div>
                 </div>
             </section>
@@ -162,14 +220,13 @@
                             <h5>Слідкуй за нами в соціальних мережах!</h5>
                             <h5>Залишити свій відгук про нас</h5>
                             <div class="col-8 offset-2">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula,
-                                    interdum ut
-                                    lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit
-                                    amet rutrum
-                                    est pretium.</p>
+                                <p>Підписуйся на сторінку facebook та першим дізнавайся про наші новинки та акції.
+                                    Ми завжди раді Вашим коментарям!
+                                </p>
                             </div>
                             <div class="button-area">
-                                <a href="#" class="button-action">Залишити відгук</a>
+                                <a href="https://www.facebook.com/Eco-Worms-108910648020739" class="button-action">Залишити
+                                    відгук</a>
                             </div>
 
 
@@ -187,7 +244,8 @@
                 <div class="row">
                     <div class="col-md-3 col-12">
                         <div class="about-company-footer-area">
-                            <a href="#"><img src="img/logo.png" alt=""></a>
+                            <a href="https://eco-worms.com.ua"><img
+                                    src="img/logo.png" alt=""></a>
                             <p>Екологічне фермерське господарство, що займається
                                 розведенням черв’яків типу Дендробена та Старатель
                                 для риболовлі з 2021 року</p>
@@ -197,9 +255,7 @@
                         <div class="contact-footer-area">
                             <h5>Наші контакти:</h5>
                             <div class="contact-info">
-                                <p>222 Ave C South
-                                    Saskatoon, Saskatchewan
-                                    Canada S7K 2N5</p>
+                                <p>Луцьк, Волинська обл., Україна</p>
                                 <a href="#"><p>eco-worms@gmail.com</p></a>
                                 <a href="#">
                                     <p class="phone-number-footer">+38 097 062 7 555</p>
@@ -211,11 +267,18 @@
                         <div class="footer-pages">
                             <h5>Навігація:</h5>
                             <ul class="footer-page-list">
-                                <li><a href="#">Головна</a></li>
-                                <li><a href="#">Дендробена</a></li>
-                                <li><a href="#">Старатель</a></li>
-                                <li><a href="#">Про компанію</a></li>
-                                <li><a href="#">Контакти</a></li>
+                                <li><a href="https://eco-worms.com.ua">Головна</a></li>
+                                <li>
+                                    <a href="https://eco-worms.com.ua/product/%d0%b4%d0%b5%d0%bd%d0%b4%d1%80%d0%be%d0%b1%d0%b5%d0%bd%d0%b0/">Дендробена</a>
+                                </li>
+                                <li>
+                                    <a href="https://eco-worms.com.ua/product/c%d1%82%d0%b0%d1%80%d0%b0%d1%82%d0%b5%d0%bb%d1%8c/">Старатель</a>
+                                </li>
+                                <li><a href="https://eco-worms.com.ua/%d0%bf%d1%80%d0%be-%d0%bd%d0%b0%d1%81/">Про
+                                    компанію</a></li>
+                                <li>
+                                    <a href="https://eco-worms.com.ua/%d0%bd%d0%b0%d1%88%d1%96-%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d0%b8/">Контакти</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -225,8 +288,13 @@
                             <div class="social-links">
                                 <h5>Ми у соціальних
                                     мережах:</h5>
-                                <a class="header-social" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="header-social" href="#"><i class="fab fa-whatsapp"></i></a>
+                                <div class="wrapp-soc-icons">
+                                    <a class="header-social"
+                                       href="https://www.facebook.com/Eco-Worms-108910648020739"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="header-social" href="#"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+
                             </div>
                             <h5>Зв’язатися з нами:</h5>
                             <form action="post">
@@ -245,14 +313,434 @@
                 <p>Copyright 2021 <span>eco-worms</span>. All Rights Reserved.</p>
                 <div class="policy-pages">
                     <ul>
-                        <li><a href="#">About</a></li>
+                        <li><a href="https://eco-worms.com.ua/%d0%bf%d1%80%d0%be-%d0%bd%d0%b0%d1%81/">About</a></li>
                         <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li>
+                            <a href="https://eco-worms.com.ua/%d0%bd%d0%b0%d1%88%d1%96-%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d0%b8/">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+
+    <div class="popup-wrapper">
+        <div class="overlay">
+
+        </div>
+        <div class="main-popup">
+            <div class="popup-head">
+                <div class="popup-cart-head">
+                    <img src="img/korzina.svg" alt="">
+                    <h2>КОШИК</h2>
+                </div>
+                <a href="#" class="close-popup">
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="43px" height="44px">
+                        <image x="0px" y="0px" width="43px" height="44px"
+                               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAoCAMAAABKKxPSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRUZFRX///+qPLJrAAAAb3RSTlMAAhpNigOXrwTVESjWF6HGDy3u1wU8yhR4zBDwRBMvB9nPxB7fKvQb3hgx9sDb0rjc0JjJM7m02JnFFtOz3RxC4OEhy+MfnLwOR63mIKsMx+WeugvI5yRMrOqpCaW37CMIwvF+qMODwaqnrrZIJ1oJlceJAAAAAWJLR0Rw2ABsdAAAAAd0SU1FB+UGGA8ZHBTtGCsAAAGjSURBVDjLjZRXV8JAEIVXmqAgKgiCSBRQBBErSBELitjAgr33Lvv/30whMykbcR5y7tz5MpNM9oSQdtFhkpXZYrYaYjZKO+0SRil1dBlg3XyROl286hEUdfcysb5+serxkgEqhc/PwlpFaiGDsgwE9UOH5KKbhGRJfcMaLAwY348bgWRUPToMBRrh02gM0oCy49g4ThKN+AR2TACWnAQ31bJMU2Cl5dFJHDrtle81zYA56xKdOcTmFc8Sx5dxCOACYhnVuyUQTLuUWNau3lViETvmEMvrdl9wUH1kiD4KTh2WZZ4NV1GDpQg7/MW2QxngEjEOxXpLy8bYinJsKfovjNJVAzBHNRFjgiGqi7Xyn9g6qI2KFttErLrlQ1DTcRuxHUKCCO7uGWA1Ia/vQ36g6HiI2JHkNI7BOTmVsTPEzmWv4QbvoqzDLnHGVR5BseM1YjfKZ25EwL+9U32smnoH9w9QeayQJ0ietTvlXqD2iv0Y5417w6Pt9UjqnfXNvSnoR6IlQXywzxAngZ+CrvD/oarRmbQK6/mSdP37hxhH09bkr7+9JiivERcrvQAAAABJRU5ErkJggg=="/>
+                    </svg>
+                </a>
+            </div>
+            <div class="popup-text">
+                <h5>ДЛЯ ОФОРМЛЕННЯ ЗАМОВЛЕННЯ ЗАПОВНІТЬ ВАШІ ДАНІ</h5>
+                <p>НАШ КОНСУЛЬТАНТ ЗВ’ЯЖЕТЬСЯ З ВАМИ ДЛЯ ПІДТВЕРДЖЕННЯ</p>
+            </div>
+            <div class="woocommerce">
+                <div class="woocommerce-notices-wrapper"></div>
+                <form class="woocommerce-cart-form" action="https://eco-worms.com.ua/?page_id=8" method="post">
+
+                    <table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents"
+                           cellspacing="0">
+
+                        <tbody>
+
+                        <tr align="center"
+                            class="woocommerce-cart-form__cart-item cart_item">
+
+
+                            <td class="product-thumbnail">
+                                <a href="https://eco-worms.com.ua/product/%d0%b4%d0%b5%d0%bd%d0%b4%d1%80%d0%be%d0%b1%d0%b5%d0%bd%d0%b0/?attribute_pa_%25d0%25b2%25d0%25b0%25d0%25b3%25d0%25b0=25%25d0%25b3">
+                                    <img src="img/cart-worm-2.png"
+                                         alt="">
+                                </a>
+                            </td>
+
+                            <td class="product-name" data-title="Товар">
+                                <a href="https://eco-worms.com.ua/product/%d0%b4%d0%b5%d0%bd%d0%b4%d1%80%d0%be%d0%b1%d0%b5%d0%bd%d0%b0/?attribute_pa_%25d0%25b2%25d0%25b0%25d0%25b3%25d0%25b0=25%25d0%25b3">Дендробена
+                                    - 25г</a></td>
+
+
+                            <td class="product-remove">
+                                <a href="https://eco-worms.com.ua/?page_id=8&#038;remove_item=6675dfeb6a6eeccffb2d48f704a7c6a5&#038;_wpnonce=77b9bec155"
+                                   class="remove" aria-label="Видалити цю позицію" data-product_id="22"
+                                   data-product_sku=""><i class="fas fa-trash"></i></a>
+
+                            <td align="center" class="product-quantity"
+                                data-title="Кількість">
+                                <div class="quantity">
+                                    <label class="screen-reader-text" for="quantity_6175ce2913396">Дендробена - 25г
+                                        кількість</label>
+                                    <input
+                                            type="number"
+                                            id="quantity_6175ce2913396"
+                                            class="input-text qty text"
+                                            step="1"
+                                            min="0"
+                                            max=""
+                                            name="cart[6675dfeb6a6eeccffb2d48f704a7c6a5][qty]"
+                                            value="1"
+                                            title="К-ть"
+                                            size="4"
+                                            placeholder=""
+                                            inputmode="numeric"/>
+                                </div>
+                                <p class="weight-name">кг</p>
+                            </td>
+                            <td class="product-subtotal" data-title="Проміжний підсумок">
+                                <div class="price-per">
+                                    <span class="woocommerce-Price-amount amount"><bdi><span
+                                            class="woocommerce-Price-currencySymbol">&#8372;</span>20</bdi></span>
+                                    <p class="price-one">
+                                        грн/уп
+                                    </p>
+                                </div>
+                                <div class="sum-item">
+                                    <span class="woocommerce-Price-amount amount"><bdi><span
+                                            class="woocommerce-Price-currencySymbol">&#8372;</span>20</bdi></span>
+                                    <p class="price-sum">
+                                        грн
+                                    </p>
+                                </div>
+
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td colspan="6" class="actions">
+
+
+                                <button type="submit" class="button" name="update_cart"
+                                        value="Оновити кошик">Оновити кошик
+                                </button>
+
+
+                                <input type="hidden" id="woocommerce-cart-nonce" name="woocommerce-cart-nonce"
+                                       value="77b9bec155"/><input type="hidden" name="_wp_http_referer"
+                                                                  value="/%d0%bf%d1%80%d0%be-%d0%bd%d0%b0%d1%81/"/></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </form>
+
+
+                <div class="cart-collaterals">
+                    <div class="cart_totals ">
+
+
+                        <h2>Разом:</h2>
+
+                        <table cellspacing="0" class="shop_table shop_table_responsive">
+
+                            <tr class="order-total">
+                                <td data-title="Загалом"><strong><span class="woocommerce-Price-amount amount"><bdi><span
+                                        class="woocommerce-Price-currencySymbol">&#8372;</span>20</bdi></span></strong>
+                                </td>
+                            </tr>
+
+
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="woocommerce">
+                <div class="woocommerce-notices-wrapper"></div>
+                <form name="checkout" method="post" class="checkout woocommerce-checkout"
+                      action="https://eco-worms.com.ua/checkout/" enctype="multipart/form-data">
+
+
+                    <div class="col2-set" id="customer_details">
+                        <div class="col-1">
+                            <div class="woocommerce-billing-fields">
+
+                                <div class="woocommerce-billing-fields__field-wrapper">
+                                    <p class="form-row form-row-first validate-required" id="billing_first_name_field"
+                                       data-priority="10"><label for="billing_first_name" class="">ПІБ&nbsp;<abbr
+                                            class="required" title="обов&#039;язкове">*</abbr></label><span
+                                            class="woocommerce-input-wrapper"><input type="text" class="input-text "
+                                                                                     name="billing_first_name"
+                                                                                     id="billing_first_name"
+                                                                                     placeholder="" value=""
+                                                                                     autocomplete="given-name"/></span>
+                                    </p>
+                                    <p class="form-row form-row-wide address-field update_totals_on_change validate-required"
+                                       id="billing_country_field" data-priority="40"><label for="billing_country"
+                                                                                            class="">Країна/Регіон&nbsp;<abbr
+                                            class="required" title="обов&#039;язкове">*</abbr></label><span
+                                            class="woocommerce-input-wrapper"><select name="billing_country"
+                                                                                      id="billing_country"
+                                                                                      class="country_to_state country_select "
+                                                                                      autocomplete="country"
+                                                                                      data-placeholder="Select a country / region&hellip;"
+                                                                                      data-label="Країна/Регіон"><option
+                                            value="">Select a country / region&hellip;</option><option value="AU">Австралія</option><option
+                                            value="AT">Австрія</option><option value="AZ">Азербайджан</option><option
+                                            value="AX">Аландські острови</option><option value="AL">Албанія</option><option
+                                            value="DZ">Алжир</option><option value="AS">Американське Самоа</option><option
+                                            value="AI">Ангілья</option><option value="AO">Ангола</option><option
+                                            value="AD">Андорра</option><option value="AQ">Антарктида</option><option
+                                            value="AG">Антигуа і Барбуда</option><option value="AR">Аргентина</option><option
+                                            value="AW">Аруба</option><option value="AF">Афганістан</option><option
+                                            value="BS">Багамські острови</option><option value="BD">Бангладеш</option><option
+                                            value="BB">Барбадос</option><option value="BH">Бахрейн</option><option
+                                            value="PW">Белау</option><option value="BZ">Беліз</option><option
+                                            value="BE">Бельгія</option><option value="BJ">Бенин</option><option
+                                            value="BM">Бермудські Острови</option><option value="BY">Білорусь</option><option
+                                            value="BG">Болгарія</option><option value="BO">Болівія</option><option
+                                            value="BQ">Бонайре, Сінт-Естатіус і Саба</option><option value="BA">Боснія і Герцеговина</option><option
+                                            value="BW">Ботсвана</option><option value="BR">Бразилія</option><option
+                                            value="IO">Британська територія в Індійському океані</option><option
+                                            value="BN">Бруней</option><option value="BF">Буркіна-Фасо</option><option
+                                            value="BI">Бурунді</option><option value="BT">Бутан</option><option
+                                            value="VN">В&#039;єтнам</option><option value="VU">Вануату</option><option
+                                            value="VA">Ватикан</option><option value="GB">Великобританія</option><option
+                                            value="VE">Венесуела</option><option value="VG">Віргінські острови (Британські)</option><option
+                                            value="VI">Віргінські острови (США)</option><option
+                                            value="AM">Вірменія</option><option value="GA">Габон</option><option
+                                            value="HT">Гаїті</option><option value="GM">Гамбія</option><option
+                                            value="GH">Гана</option><option value="GY">Гаяна</option><option value="GP">Гваделупа</option><option
+                                            value="GT">Гватемала</option><option value="GN">Гвінея</option><option
+                                            value="GW">Гвінея-Бісау</option><option value="GG">Гернсі</option><option
+                                            value="GI">Гібралтар</option><option value="HN">Гондурас</option><option
+                                            value="HK">Гонконг</option><option value="GD">Гренада</option><option
+                                            value="GR">Греція</option><option value="GE">Грузія</option><option
+                                            value="GU">Гуам</option><option value="GL">Ґренландія</option><option
+                                            value="DK">Данія</option><option value="JE">Джерсі</option><option
+                                            value="DJ">Джибуті</option><option value="DM">Домініка</option><option
+                                            value="DO">Домініканська Республіка</option><option
+                                            value="EC">Еквадор</option><option value="GQ">Екваторіальна Гвінея</option><option
+                                            value="ER">Еритрея</option><option value="EE">Естонія</option><option
+                                            value="ET">Ефіопія</option><option value="EG">Єгипет</option><option
+                                            value="YE">Ємен</option><option value="ZM">Замбія</option><option
+                                            value="EH">Західна Сахара</option><option value="ZW">Зімбабве</option><option
+                                            value="UM">Зовнішні малі острови США</option><option
+                                            value="IL">Ізраїль</option><option value="IN">Індія</option><option
+                                            value="ID">Індонезія</option><option value="IQ">Ірак</option><option
+                                            value="IR">Іран</option><option value="IE">Ірландія</option><option
+                                            value="IS">Ісландія</option><option value="ES">Іспанія</option><option
+                                            value="IT">Італія</option><option value="JO">Йорданія</option><option
+                                            value="CV">Кабо-Верде</option><option value="KZ">Казахстан</option><option
+                                            value="KY">Кайманові острови</option><option value="KH">Камбоджа</option><option
+                                            value="CM">Камерун</option><option value="CA">Канада</option><option
+                                            value="QA">Катар</option><option value="KE">Кенія</option><option
+                                            value="KG">Киргизія</option><option value="CN">Китай</option><option
+                                            value="CY">Кіпр</option><option value="KI">Кірібаті</option><option
+                                            value="CC">Кокосові (Кілінг) острови</option><option
+                                            value="CO">Колумбія</option><option value="KM">Коморські острови</option><option
+                                            value="CG">Конго (Браззавіль)</option><option
+                                            value="CD">Конго (Кіншаса)</option><option value="CR">Коста-Ріка</option><option
+                                            value="CI">Кот-д&#039;Івуар</option><option value="CU">Куба</option><option
+                                            value="KW">Кувейт</option><option value="CW">Кюрасао</option><option
+                                            value="LA">Лаос</option><option value="LV">Латвія</option><option
+                                            value="LS">Лесото</option><option value="LT">Литва</option><option
+                                            value="LR">Ліберія</option><option value="LB">Ліван</option><option
+                                            value="LY">Лівія</option><option value="LI">Ліхтенштейн</option><option
+                                            value="LU">Люксембург</option><option value="MM">М&#039;янма</option><option
+                                            value="MU">Маврикій</option><option value="MR">Мавританія</option><option
+                                            value="MG">Мадагаскар</option><option value="YT">Майотта</option><option
+                                            value="MO">Макао</option><option value="MW">Малаві</option><option
+                                            value="MY">Малайзія</option><option value="ML">Малі</option><option
+                                            value="MV">Мальдіви</option><option value="MT">Мальта</option><option
+                                            value="MA">Марокко</option><option value="MQ">Мартиніка</option><option
+                                            value="MH">Маршаллові острови</option><option value="MX">Мексика</option><option
+                                            value="FM">Мікронезія</option><option value="MZ">Мозамбік</option><option
+                                            value="MD">Молдова</option><option value="MC">Монако</option><option
+                                            value="MN">Монголія</option><option value="MS">Монтсеррат</option><option
+                                            value="NA">Намібія</option><option value="NR">Науру</option><option
+                                            value="NP">Непал</option><option value="NE">Нігер</option><option
+                                            value="NG">Нігерія</option><option value="NL">Нідерланди</option><option
+                                            value="NI">Нікарагуа</option><option value="DE">Німеччина</option><option
+                                            value="NU">Ніуе</option><option value="NZ">Нова Зеландія</option><option
+                                            value="NC">Нова Каледонія</option><option value="NO">Норвегія</option><option
+                                            value="AE">Об&#039;єднані Арабські Емірати</option><option
+                                            value="OM">Оман</option><option value="BV">Острів Буве́</option><option
+                                            value="IM">Острів Мен</option><option value="NF">Острів Норфолк</option><option
+                                            value="CX">Острів Різдва</option><option
+                                            value="SH">Острів Святої Єлени</option><option value="HM">Острів Херд і острови Макдональд</option><option
+                                            value="CK">Острови Кука</option><option value="PK">Пакистан</option><option
+                                            value="PS">Палестинська територія</option><option value="PA">Панама</option><option
+                                            value="PG">Папуа-Нова Гвінея</option><option value="PY">Парагвай</option><option
+                                            value="PE">Перу</option><option value="ZA">Південна Африка</option><option
+                                            value="GS">Південна Джорджія / Сандвічеві острови</option><option
+                                            value="KR">Південна Корея</option><option
+                                            value="SS">Південний Судан</option><option
+                                            value="KP">Північна Корея</option><option
+                                            value="MK">Північна Македонія</option><option value="MP">Північні Маріанські острови</option><option
+                                            value="PN">Піткерн</option><option value="PL">Польща</option><option
+                                            value="PT">Португалія</option><option value="PR">Пуерто-Рико</option><option
+                                            value="RE">Реюньйон</option><option value="RU">Росія</option><option
+                                            value="RW">Руанда</option><option value="RO">Румунія</option><option
+                                            value="SV">Сальвадор</option><option value="WS">Самоа</option><option
+                                            value="SM">Сан-Маріно</option><option
+                                            value="ST">Сан-Томе і Принсіпі</option><option
+                                            value="SA">Саудівська Аравія</option><option value="SZ">Свазіленд</option><option
+                                            value="SC">Сейшельські острови</option><option
+                                            value="BL">Сен-Бартелемі</option><option value="SX">Сен-Мартен (голландський частина)</option><option
+                                            value="MF">Сен-Мартен (французька частина)</option><option value="PM">Сен-П&#039;єр і Мікелон</option><option
+                                            value="SN">Сенегал</option><option
+                                            value="VC">Сент-Вінсент і Гренадіни</option><option value="KN">Сент-Кітс і Невіс</option><option
+                                            value="LC">Сент-Люсія</option><option value="RS">Сербія</option><option
+                                            value="SY">Сирія</option><option value="SG">Сінгапур</option><option
+                                            value="SK">Словаччина</option><option value="SI">Словенія</option><option
+                                            value="SB">Соломонові острови</option><option value="SO">Сомалі</option><option
+                                            value="US">Сполучені Штати Америки</option><option value="SD">Судан</option><option
+                                            value="SR">Сурінам</option><option value="SL">Сьєрра-Леоне</option><option
+                                            value="TJ">Таджикистан</option><option value="TH">Таїланд</option><option
+                                            value="TW">Тайвань</option><option value="TZ">Танзанія</option><option
+                                            value="TC">Теркс і Кайкос острова</option><option
+                                            value="TL">Тимор-Лешті</option><option value="TG">Того</option><option
+                                            value="TK">Токелау</option><option value="TO">Тонга</option><option
+                                            value="TT">Тринідад і Тобаго</option><option value="TV">Тувалу</option><option
+                                            value="TN">Туніс</option><option value="TR">Туреччина</option><option
+                                            value="TM">Туркменістан</option><option value="UG">Уганда</option><option
+                                            value="HU">Угорщина</option><option value="UZ">Узбекистан</option><option
+                                            value="UA" selected='selected'>Україна</option><option value="WF">Уолліс та Футуна</option><option
+                                            value="UY">Уругвай</option><option value="FO">Фарерські острови</option><option
+                                            value="FJ">Фіджі</option><option value="PH">Філіппіни</option><option
+                                            value="FI">Фінляндія</option><option
+                                            value="FK">Фолклендські острови</option><option value="FR">Франція</option><option
+                                            value="GF">Французька Гвіана</option><option
+                                            value="PF">Французька Полінезія</option><option value="TF">Французькі Південні Території</option><option
+                                            value="HR">Хорватія</option><option value="CF">Центральноафриканська Республіка</option><option
+                                            value="TD">Чад</option><option value="CZ">Чеська Республіка</option><option
+                                            value="CL">Чилі</option><option value="ME">Чорногорія</option><option
+                                            value="CH">Швейцарія</option><option value="SE">Швеція</option><option
+                                            value="SJ">Шпіцберген і Ян-Маєн</option><option
+                                            value="LK">Шрі Ланка</option><option value="JM">Ямайка</option><option
+                                            value="JP">Японія</option></select><noscript><button type="submit"
+                                                                                                 name="woocommerce_checkout_update_totals"
+                                                                                                 value="Оновити Країну/Регіон">Оновити Країну/Регіон</button></noscript></span>
+                                    </p>
+                                    <p class="form-row form-row-wide address-field validate-required"
+                                       id="billing_city_field" data-priority="70"><label for="billing_city" class="">Місто
+                                        / Відділення Нової Пошти&nbsp;<abbr class="required"
+                                                                            title="обов&#039;язкове">*</abbr></label><span
+                                            class="woocommerce-input-wrapper"><input type="text" class="input-text "
+                                                                                     name="billing_city"
+                                                                                     id="billing_city" placeholder=""
+                                                                                     value=""
+                                                                                     autocomplete="address-level2"/></span>
+                                    </p>
+                                    <p class="form-row form-row-wide validate-required validate-phone"
+                                       id="billing_phone_field" data-priority="100"><label for="billing_phone" class="">Телефон&nbsp;<abbr
+                                            class="required" title="обов&#039;язкове">*</abbr></label><span
+                                            class="woocommerce-input-wrapper"><input type="tel" class="input-text "
+                                                                                     name="billing_phone"
+                                                                                     id="billing_phone" placeholder=""
+                                                                                     value=""
+                                                                                     autocomplete="tel"/></span></p>
+                                    <p class="form-row form-row-wide validate-required validate-email"
+                                       id="billing_email_field" data-priority="110"><label for="billing_email" class="">E-mail&nbsp;<abbr
+                                            class="required" title="обов&#039;язкове">*</abbr></label><span
+                                            class="woocommerce-input-wrapper"><input type="email" class="input-text "
+                                                                                     name="billing_email"
+                                                                                     id="billing_email" placeholder=""
+                                                                                     value=""
+                                                                                     autocomplete="email username"/></span>
+                                    </p></div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-2">
+                            <div id="order_review" class="woocommerce-checkout-review-order">
+                                <h5>Спосіб оплати</h5>
+
+                                <div id="payment" class="woocommerce-checkout-payment">
+                                    <ul class="wc_payment_methods payment_methods methods">
+                                        <li class="wc_payment_method payment_method_cheque">
+                                            <input id="payment_method_cheque" type="radio" class="input-radio"
+                                                   name="payment_method" value="cheque" checked='checked'
+                                                   data-order_button_text=""/>
+
+                                            <label for="payment_method_cheque">
+                                                Оплата карткою </label>
+                                        </li>
+                                        <li class="wc_payment_method payment_method_cod">
+                                            <input id="payment_method_cod" type="radio" class="input-radio"
+                                                   name="payment_method" value="cod" data-order_button_text=""/>
+
+                                            <label for="payment_method_cod">
+                                                Оплата при доставке </label>
+                                        </li>
+                                    </ul>
+                                    <div class="form-row place-order">
+                                        <noscript>
+                                            Оскільки ваш браузер не підтримує JavaScript (або він вимкнений), будь
+                                            ласка, натисніть кнопку <em>Оновлення підсумку</em> перед розміщенням
+                                            замовлення. Інакше ви можете отримати рахунок на більшу суму, ніж очікуєте,
+                                            якщо не зробите цього. <br/>
+                                            <button type="submit" class="button alt"
+                                                    name="woocommerce_checkout_update_totals" value="Оновити підсумки">
+                                                Оновити підсумки
+                                            </button>
+                                        </noscript>
+
+                                        <div class="woocommerce-terms-and-conditions-wrapper">
+                                            <div class="woocommerce-privacy-policy-text"><p>Ваши личные данные будут
+                                                использоваться для обработки ваших заказов, упрощения вашей работы с
+                                                сайтом и для других целей, описанных в нашей <a
+                                                        href="https://eco-worms.com.ua/?page_id=3"
+                                                        class="woocommerce-privacy-policy-link" target="_blank">політика
+                                                    конфіденційності</a>.</p>
+                                            </div>
+                                        </div>
+
+
+                                        <button type="submit" class="button alt" name="woocommerce_checkout_place_order"
+                                                id="place_order" value="Підтвердити замовлення"
+                                                data-value="Підтвердити замовлення">Підтвердити замовлення
+                                        </button>
+
+                                        <input type="hidden" id="woocommerce-process-checkout-nonce"
+                                               name="woocommerce-process-checkout-nonce" value="ad49bb8b5f"/><input
+                                            type="hidden" name="_wp_http_referer"
+                                            value="/%d0%bf%d1%80%d0%be-%d0%bd%d0%b0%d1%81/"/></div>
+                                </div>
+                            </div>
+                            <div class="woocommerce-shipping-fields">
+                            </div>
+                            <div class="woocommerce-additional-fields">
+
+                                <div class="woocommerce-additional-fields__field-wrapper">
+                                    <p class="form-row notes" id="order_comments_field" data-priority=""><label
+                                            for="order_comments" class="">Коментарі до замовлення&nbsp;<span
+                                            class="optional">(необов&#039;язково)</span></label><span
+                                            class="woocommerce-input-wrapper"><textarea name="order_comments"
+                                                                                        class="input-text "
+                                                                                        id="order_comments"
+                                                                                        placeholder="" rows="2"
+                                                                                        cols="5"></textarea></span></p>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
 
 </div>
 

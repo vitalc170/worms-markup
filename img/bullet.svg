@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7" height="10" viewBox="0 0 7 10">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fefefe;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="bullet" class="cls-1" d="M977.9,2049l5.1-5-5.1-5-1.9,1.84,3.223,3.16L976,2047.16Z" transform="translate(-976 -2039)"/>
+</svg>
