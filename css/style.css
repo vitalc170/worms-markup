@@ -1,38 +1,39 @@
+
+
 @font-face {
     font-family: 'Gilroy-Heavy';
-    src: url('../fonts/Gilroy-Heavy.ttf') format('truetype');
+    src: url('../eco-worms/fonts/Gilroy-Heavy.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Gilroy-Black';
-    src: url('../fonts/Gilroy-Black.ttf') format('truetype');
+    src: url('../eco-worms/fonts/Gilroy-Black.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Gilroy-Bold';
-    src: url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    src: url('../eco-worms/fonts/Gilroy-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Gilroy-Medium';
-    src: url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    src: url('../eco-worms/fonts/Gilroy-Medium.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Gilroy-SemiBold';
-    src: url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
+    src: url('../eco-worms/fonts/Gilroy-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'MyriadPro-Bold';
-    src: url('../fonts/MyriadPro-Bold.ttf') format('truetype');
+    src: url('../eco-worms/fonts/MyriadPro-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'MyriadPro-Regular';
-    src: url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+    src: url('../eco-worms/fonts/MyriadPro-Regular.ttf') format('truetype');
 }
-
 
 /*------------------------------------------------
 GLOBAL STYLES
@@ -89,12 +90,10 @@ h5 {
     font-size: 22px;
 }
 
-
 p {
     font-family: 'MyriadPro-Regular';
     font-size: 16px;
 }
-
 
 ul, p {
     margin: 0;
@@ -149,12 +148,12 @@ BACKGROUND FOR PAGE
 }
 
 .main-page .main-area-with-bg {
-    background: url("../img/main-bg.jpg") no-repeat;
+    background: url("../eco-worms/img/main-bg.jpg") no-repeat;
     background-size: cover;
 }
 
 .single-page .main-area-with-bg {
-    background: url("../img/main-bg.jpg") no-repeat;
+    background: url("../eco-worms/img/main-bg.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -162,10 +161,14 @@ BACKGROUND FOR PAGE
     background: #292120;
 }
 
+.contact-page .wrapper {
+    background: #292120;
+}
+
 /*------------------------------------------------
 HEADER
 --------------------------------------------------*/
-header {
+.header {
     background: #191515;
 }
 
@@ -175,6 +178,14 @@ header {
     top: 0;
     left: 0;
     z-index: 2;
+}
+
+.logo-area {
+    width: 50%;
+}
+
+.logo-area img {
+    width: 50%;
 }
 
 .wrapp-top-area-header {
@@ -196,6 +207,24 @@ header {
 
 .header-mini-cart {
     margin-left: 5px;
+    position: relative;
+}
+
+.header-mini-cart img {
+    width: 54px;
+}
+
+.header-mini-cart .cart-counter {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background: #a03624;
+    color: #fff;
+    padding: 3px 8px;
+    line-height: 1;
+    border-radius: 25px;
+    font-family: "MyriadPro-Bold";
+    font-size: 17px;
 }
 
 .header-social i {
@@ -206,6 +235,7 @@ header {
 
 .main-menu-list {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .main-menu-list .main-menu-item {
@@ -242,10 +272,10 @@ header {
 
 .main-menu-list .main-menu-item.production .sub-list {
     display: none;
-    display: none;
     position: absolute;
     width: 100%;
     padding-right: 13px;
+    z-index: 111;
 }
 
 .main-menu-list .main-menu-item.production:hover .sub-list {
@@ -324,7 +354,7 @@ HOME BANNER
 .wrapp-slides .owl-dots {
     position: absolute;
     width: fit-content;
-    bottom: 25px;
+    bottom: 10px;
     left: 50%;
 }
 
@@ -382,26 +412,80 @@ CHOOSE WORM
 
 .main-product .main-prod-wrapper {
     text-align: center;
+    padding-bottom: 80px;
+    z-index: 2;
+}
+
+.main-product .main-prod-wrapper .photo-area-prod {
+    position: relative;
+    padding-bottom: 45px;
 }
 
 .main-product .main-prod-wrapper img {
-    height: 166px;
-    margin-bottom: 55px;
+    height: 280px;
+    margin-bottom: 10px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .main-product {
     padding-top: 90px;
+    position: relative;
+    z-index: 2;
+}
+
+.main-product .main-prod-wrapper .worm-icon {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    background: #312318;
+    border-radius: 40px;
+    padding: 10px;
+    border: 5px solid #543e2e;
+    position: absolute;
+    left: 43%;
+    bottom: 0;
+}
+
+.main-product .main-prod-wrapper .photo-area-prod .icon-link-worm {
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+}
+
+.main-product .main-prod-wrapper.central-prod .worm-icon {
+    background: #9D3220;
+}
+
+.divider-worm {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #1a1a1a;
+    top: 53.5%;
+}
+
+.divider-more-button {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #9D3220;
+    bottom: 11%;
 }
 
 .main-product .main-prod-wrapper h3 {
     padding-bottom: 28px;
-    color: #000;
+    color: #9d3220;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 60%);
     font-size: 30px;
 }
 
 .main-product .main-prod-wrapper.central-prod h3 {
     color: #fff;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .main-product .main-prod-wrapper.central-prod p {
@@ -409,28 +493,37 @@ CHOOSE WORM
 }
 
 .main-product .main-prod-wrapper p {
-    color: #1e1b1b;
+    color: #d5c7bf;
     font-family: "MyriadPro-Bold";
     padding-bottom: 28px;
     max-width: 38ch;
     margin: 0 auto;
 }
 
-.main-product .main-prod-wrapper a {
-    color: #2f0700;
+.main-product .main-prod-wrapper a.more-about-buy {
+    color: #fff;
     font-family: "Gilroy-Black";
+    text-transform: uppercase;
     font-size: 16px;
-    padding-bottom: 80px;
+    padding: 5px 25px;
+    background: #9D3220;
+    border: 5px solid #543e2e;
+    z-index: 2;
+    border-block: none;
 }
 
-.main-product .main-prod-wrapper.central-prod {
-    background-image: url("../img/shadow.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 80px;
+section.choose-worm .container {
+    position: relative;
 }
 
-.main-product .main-prod-wrapper.central-prod a {
+/*.main-product .main-prod-wrapper.central-prod {*/
+/*    background-image: url("../eco-worms/img/shadow.png");*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    padding-bottom: 80px;*/
+/*}*/
+
+.main-product .main-prod-wrapper a:focus {
     color: #9d3522;
     padding-bottom: 3px;
     border-bottom: 1px solid #9d3522;
@@ -468,10 +561,11 @@ REVIEWS AREA
 }
 
 .clients-reviews .left-side h4 {
-    color: #1a1616;
+    color: #d5c7bf;
     text-align: center;
     padding-top: 14px;
     padding-bottom: 12px;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 60%);
 }
 
 .clients-reviews .left-side p {
@@ -486,7 +580,7 @@ REVIEWS AREA
 .clients-reviews .right-side p {
     font-family: "Gilroy-Bold";
     font-size: 16px;
-    color: #1a1615;
+    color: #d5c7bf;
     padding-top: 28px;
     padding-bottom: 35px;
 }
@@ -494,10 +588,11 @@ REVIEWS AREA
 .clients-reviews .right-side .review-stars {
     width: fit-content;
     margin: 0 auto;
+    display: flex;
 }
 
 .clients-reviews .right-side .review-stars img {
-    width: fit-content;
+    width: 25px;
     text-align: center;
 }
 
@@ -511,7 +606,6 @@ REVIEWS AREA
     z-index: -1;
 }
 
-
 /*------------------------------------------------
 SINGLE PAGE
 --------------------------------------------------*/
@@ -519,7 +613,7 @@ SINGLE PAGE
 BANNER AREA
 --------------------------------------------------*/
 .banner-area {
-    background: url("../img/page-banner.jpg") no-repeat;
+    background: url("../eco-worms/img/page-banner.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -562,6 +656,7 @@ PRODUCT DESCRIPTION
 .top-area-prod-descript .photo-left-area {
     display: flex;
     flex-direction: row;
+    height: 100%;
 }
 
 .top-area-prod-descript .photo-left-area img {
@@ -575,21 +670,32 @@ PRODUCT DESCRIPTION
     padding-right: 1%;
 }
 
+.main-prod-photo img {
+    height: 440px !important;
+    object-fit: cover !important;
+}
+
 .additional-photo {
     width: 20%;
-    height: 25%;
 }
 
 .additional-photo img {
     border: 5px solid #666262;
 }
 
-.additional-photo .change-photo-wrapper {
+.additional-photo .woocommerce-product-gallery__image a {
     margin-bottom: 5px;
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.additional-photo .change-photo-wrapper:after {
+.additional-photo .woocommerce-product-gallery__image {
+    height: 18.1%;
+    margin-bottom: 5px;
+}
+
+.additional-photo .woocommerce-product-gallery__image a:after {
     position: absolute;
     background: #4c4848;
     opacity: 0.6;
@@ -600,7 +706,7 @@ PRODUCT DESCRIPTION
     left: 0;
 }
 
-.additional-photo .change-photo-wrapper.active:after {
+.additional-photo .woocommerce-product-gallery__image a.active:after {
     display: none;
 }
 
@@ -609,8 +715,18 @@ PRODUCT DESCRIPTION
 }
 
 .description-right-area {
+    width: 100%;
     float: right;
-    background: url("../img/single-worm.png") no-repeat;
+    background-size: 30%;
+    background-repeat: no-repeat;
+}
+
+.description-right-area.prod-11 {
+    background-image: url("../eco-worms/img/staratel_icon_red.svg");
+}
+
+.description-right-area.prod-22 {
+    background-image: url("../eco-worms/img/dendrobena_icon_red.svg");
 }
 
 .price-wrapper {
@@ -654,13 +770,18 @@ PRODUCT DESCRIPTION
 
 .description-right-area h2 {
     font-family: 'Gilroy-Black';
-    font-size: 68px;
+    font-size: 48px;
     text-align: right;
     text-transform: uppercase;
     color: #666262;
     line-height: 0.85;
     padding-top: 35px;
     padding-bottom: 30px;
+}
+
+.description-right-area h2 span h1 {
+    font-size: 48px;
+    line-height: 0.85;
 }
 
 .description-right-area h2 span {
@@ -679,9 +800,17 @@ PRODUCT DESCRIPTION
     color: #fff;
     text-transform: uppercase;
     border-bottom: 7px solid #000;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
     font-family: "MyriadPro-Bold";
     font-size: 24px;
     line-height: 1;
+    margin-left: 21px;
+}
+
+.first-worm-pack {
+    display: none;
 }
 
 .button-action-buy:hover {
@@ -709,10 +838,12 @@ PRODUCT DESCRIPTION
     padding-bottom: 8px;
 }
 
-.left-side-bullet-list ul li i {
-    font-size: 2px;
+.left-side-bullet-list ul li::before {
+    content: "\2022";
     color: #9e3522;
-    padding-right: 8px;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
 }
 
 .description-main-text p {
@@ -720,7 +851,6 @@ PRODUCT DESCRIPTION
     color: #b7b7b7;
     line-height: 1.8;
 }
-
 
 /*------------------------------------------------
 FISH SLIDER SECTION
@@ -745,7 +875,7 @@ FISH SLIDER SECTION
 
 .fish-wide {
     padding: 40px 130px 66px 130px;
-    background: url("../img/bg-fish.png") no-repeat bottom left;
+    background: url("../eco-worms/img/bg-fish.png") no-repeat bottom left;
     background-size: contain;
 }
 
@@ -786,7 +916,6 @@ FISH SLIDER SECTION
     font-size: 14px;
 }
 
-
 /*------------------------------------------------
 ABOUT US PAGE
 --------------------------------------------------*/
@@ -799,14 +928,15 @@ ABOUT US PAGE
 .short-info-about h1 {
     text-align: center;
     text-transform: uppercase;
-    color: #191515;
+    color: #9d3220;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 60%);
     padding-bottom: 55px;
 }
 
 .short-info-about p {
     font-family: "Gilroy-Black";
     font-size: 24px;
-    color: #191515;
+    color: #d5c7bf;
     text-align: center;
     padding: 0 15%;
 }
@@ -871,11 +1001,14 @@ ABOUT US PAGE
 .slogan-text {
     height: 350px;
 }
-.slogan-text img{
+
+.slogan-text img {
     position: absolute;
     width: 100%;
     height: 100%;
-    bottom: -125px;
+    bottom: 0;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .slogan-text h2 {
@@ -885,62 +1018,68 @@ ABOUT US PAGE
     z-index: 1;
 }
 
-
 /*------------------------------------------------
 CONTACT PAGE
 --------------------------------------------------*/
 
-.send-us-mail h4{
+.send-us-mail h4 {
     color: #5f5b5b;
     text-align: center;
     padding-top: 24px;
 }
-.send-us-mail p{
+
+.send-us-mail p {
     color: #9d3220;
     text-align: center;
     padding: 22px 18% 55px 18%;
 }
-.send-us-mail .contact-header-text{
+
+.send-us-mail .contact-header-text {
     border-bottom: 1px solid #c2c2c2;
 }
-.mail-fields{
+
+.mail-fields {
     padding-top: 60px;
 }
-.mail-fields .top-text-contact h4{
+
+.mail-fields .top-text-contact h4 {
     color: #fff;
 }
-.mail-fields .top-text-contact p{
+
+.mail-fields .top-text-contact p {
     padding-top: 28px;
     color: #8f8f8f;
     line-height: 2;
 }
 
-.right-side-contact-info h4{
+.right-side-contact-info h4 {
     color: #9d3220;
     font-size: 18px;
     padding-bottom: 28px;
 }
-.right-side-contact-info p{
+
+.right-side-contact-info p {
     color: #8f8f8f;
 }
-.right-side-contact-info .where-we-are p{
+
+.right-side-contact-info .where-we-are p {
     padding-bottom: 32px;
 }
 
-.right-side-contact-info .contacts-info{
+.right-side-contact-info .contacts-info {
     padding-top: 18px;
     padding-bottom: 48px;
 }
-.right-side-contact-info .info-wrapp{
+
+.right-side-contact-info .info-wrapp {
     display: flex;
     justify-content: space-between;
 }
 
-.right-side-contact-info .additional-time-text{
+.right-side-contact-info .additional-time-text {
     padding-top: 32px;
     color: #fff;
 }
-
 
 /*------------------------------------------------
 FOOTER
@@ -1013,7 +1152,7 @@ FOOTER
 }
 
 .footer-page-list li:before {
-    content: url("../img/bullet.svg");
+    content: url("../eco-worms/img/bullet.svg");
     width: 7px;
     height: 10px;
     padding-right: 10px;
@@ -1092,4 +1231,753 @@ FOOTER
 
 .policy-pages ul li:last-child:after {
     content: none;
+}
+
+span.woocommerce-Price-currencySymbol {
+    display: none;
+    display: none;
+}
+
+.buy-area-wrapper .cart input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+    background: #666262;
+    border: 0;
+    width: 54px;
+    height: 54px;
+    text-align: center;
+    color: #fff;
+    outline: 0;
+    margin: 0 4px;
+    font-family: "MyriadPro-Bold";
+    font-size: 36px;
+}
+
+.buy-area-wrapper .cart .quantity {
+    position: relative;
+}
+
+/*.buy-area-wrapper .cart .quantity:after {*/
+/*    content: "ÐºÐ³";*/
+/*    position: absolute;*/
+/*    right: 7px;*/
+/*    top: -5px;*/
+/*    font-family: "MyriadPro-Bold";*/
+/*    font-size: 16px;*/
+/*    color: #9d3522;*/
+/*}*/
+
+.buy-area-wrapper .cart input::-webkit-outer-spin-button,
+.buy-area-wrapper .cart input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.buy-area-wrapper .cart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-disabled {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.plus-minus-button-wrapp {
+    position: relative;
+}
+
+.buy-area-wrapper .cart .wrapp-buttons {
+    display: flex;
+}
+
+.plus-minus-button-wrapp input {
+    position: absolute;
+    width: 100%;
+    height: 54px;
+    left: 0;
+    opacity: 0;
+}
+
+.mini-cart-header {
+    display: none;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    background: #9d3522;
+    padding: 0 8px;
+    border-bottom: 7px solid #292120;
+}
+
+.mini-cart-header.show {
+    display: block;
+}
+
+.mini-cart-header:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    border-style: solid;
+    border-width: 0 5px 16px 16px;
+    border-color: transparent transparent #9d3522 transparent;
+}
+
+.top-area-header .container {
+    position: relative;
+}
+
+.mini-cart-header .woocommerce-mini-cart-item.mini_cart_item {
+    padding: 21px 10px 12px 10px;
+    border-bottom: 1px solid #0003;
+}
+
+.mini-cart-header .woocommerce-mini-cart-item.mini_cart_item a {
+    font-family: "Gilroy-Black";
+    font-size: 17px;
+    color: #000;
+    text-transform: uppercase;
+    padding-right: 20px;
+}
+
+.mini-cart-header .woocommerce-mini-cart-item.mini_cart_item .quantity {
+    font-family: "MyriadPro-Bold";
+    font-size: 17px;
+    color: #fff;
+}
+
+.mini-cart-header .woocommerce-mini-cart-item.mini_cart_item .quantity .quan {
+    color: #cacaca;
+    padding-right: 20px;
+}
+
+.woocommerce-mini-cart__total.total {
+    font-family: "MyriadPro-Bold";
+    padding: 32px 10px 22px 10px;
+    color: #fff;
+}
+
+.woocommerce-mini-cart__total.total strong {
+    font-size: 17px;
+    color: #000;
+}
+
+.woocommerce-mini-cart__total.total span {
+    font-size: 24px;
+    color: #fff;
+    padding-left: 34%;
+}
+
+.contact-form-wrapper .form-add {
+    padding-top: 0 !important;
+}
+
+.contact-form-wrapper p {
+    padding-top: 12px !important;
+
+}
+
+span.wpcf7-form-control-wrap input {
+    margin-bottom: 20px;
+    width: 60%;
+    height: 40px;
+}
+
+textarea.wpcf7-form-control.wpcf7-textarea {
+    width: 75%;
+}
+
+.contact-form-wrapper {
+    padding-bottom: 60px;
+}
+
+.contact-form-wrapper .button-action {
+    border: 0;
+    margin-top: 30px;
+}
+
+.site-main .entry-header {
+    display: none;
+}
+
+#customer_details {
+    color: #fff;
+}
+
+.woocommerce-checkout-review-order {
+    color: #fff;
+}
+
+#order_review_heading {
+    color: #fff;
+}
+
+#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment {
+    background: #292120;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce a.button.alt:hover {
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+    line-height: 1;
+    padding: 16px 22px 14px 22px;
+    background: #9d3522;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+td.product-name a, .cart-collaterals {
+    color: #fff;
+}
+
+#customer_details {
+    padding-top: 25px;
+}
+
+table.shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents {
+    color: #fff;
+}
+
+.woocommerce table.shop_table, .woocommerce table.shop_table td, .woocommerce table.shop_table tbody th, .woocommerce table.shop_table tfoot td, .woocommerce table.shop_table tfoot th {
+    border-color: #fff;
+}
+
+.footer-send-email form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-send-email form input {
+    margin-right: 5%;
+    width: 75%;
+}
+
+.footer-send-email form button {
+    width: 20%;
+}
+
+.wrapp-soc-icons {
+    display: flex;
+}
+
+/*------------------------------------------------
+POPUP
+--------------------------------------------------*/
+
+.popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    z-index: 22;
+    visibility: hidden;
+    opacity: 0;
+    height: 100%;
+}
+
+.popup-wrapper.show {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+}
+
+.main-popup {
+    background: #7f3022;
+    width: 70%;
+    margin: 4% auto;
+    position: relative;
+    padding: 30px 24px 140px 24px;
+    z-index: 32;
+    height: 80%;
+    overflow: auto;
+}
+
+.popup-wrapper .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #0003;
+}
+
+.main-popup .popup-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-popup .popup-cart-head {
+    display: flex;
+    color: #fff;
+}
+
+.main-popup .popup-cart-head img {
+    width: 50px;
+}
+
+.main-menu-mobile-list .main-menu-item.production .sub-list a:focus {
+    color: #fff;
+    background: #9d3522;
+}
+
+.main-popup .popup-cart-head h2 {
+    padding-left: 12px;
+    font-family: "Gilroy-Black";
+}
+
+.main-popup .quantity input {
+    border: 0;
+}
+
+.main-popup .woocommerce table.shop_table {
+    border-color: #0006;
+}
+
+.main-popup .popup-text h5 {
+    color: #fff;
+    font-family: "Gilroy-Black";
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.main-popup .popup-text p {
+    color: #fb9c26;
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.woocommerce table.shop_table td {
+    padding: 16px 12px;
+}
+
+tr.woocommerce-cart-form__cart-item.cart_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-popup .product-name a {
+    text-transform: uppercase;
+    font-family: "Gilroy-Black";
+    font-size: 24px;
+}
+
+.main-popup .product-name a:hover {
+    color: #000;
+}
+
+.main-popup .quantity input {
+    background: #292120;
+    color: #fff;
+    font-family: "MyriadPro-Bold";
+    font-size: 22px;
+}
+
+.main-popup .product-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.main-popup .product-quantity .weight-name {
+    color: #fff;
+    padding-left: 18px;
+    font-family: "MyriadPro-Regular";
+    font-size: 15px;
+}
+
+.main-popup .price-per {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-popup .price-per bdi {
+    font-family: "Gilroy-Black";
+    font-size: 18px;
+}
+
+.main-popup .price-per p {
+    font-family: "Gilroy-SemiBold";
+    font-size: 18px;
+    padding-left: 3px;
+}
+
+.main-popup .sum-item {
+    display: flex;
+    justify-content: flex-end;
+    font-family: "MyriadPro-Bold";
+    color: #fff;
+    font-size: 24px;
+}
+
+.main-popup .sum-item p {
+    font-family: "MyriadPro-Bold";
+    font-size: 24px;
+    padding-left: 5px;
+}
+
+.main-popup .product-remove a {
+    color: #000 !important;
+}
+
+.main-popup .product-remove a:hover {
+    color: #000 !important;
+    background: transparent;
+}
+
+.main-popup .actions {
+    display: none;
+}
+
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+    width: 100%;
+}
+
+.main-popup .cart_totals {
+    text-align: right;
+}
+
+.main-popup .cart_totals td {
+    text-align: right;
+    border: 2px solid #191515 !important;
+}
+
+.main-popup .cart_totals h2 {
+    font-family: "MyriadPro-Bold";
+    font-size: 18px;
+}
+
+.main-popup .cart_totals td bdi {
+    font-family: "MyriadPro-Bold";
+    color: #fff;
+    font-size: 30px;
+}
+
+.main-popup .woocommerce table.shop_table {
+    margin-bottom: 30px;
+}
+
+.main-popup .woocommerce label {
+    color: #292120;
+    font-family: "Gilroy-Black";
+    font-size: 14px;
+}
+
+.main-popup .woocommerce .checkout.woocommerce-checkout input {
+    height: 40px;
+    font-family: "MyriadPro-Regular";
+}
+
+.main-popup .cart_totals table.shop_table {
+    margin-bottom: 10px;
+}
+
+.main-popup #add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment {
+    background: none;
+}
+
+li.wc_payment_method.payment_method_cod {
+    display: flex;
+    align-items: center;
+}
+
+.main-popup .woocommerce form .form-row .optional {
+    display: none;
+}
+
+.main-popup #add_payment_method #payment ul.payment_methods, .woocommerce-cart #payment ul.payment_methods, .woocommerce-checkout #payment ul.payment_methods {
+    border: 0;
+}
+
+.woocommerce-checkout-review-order h5 {
+    font-size: 14px;
+    font-family: "Gilroy-Black";
+}
+
+.main-popup .woocommerce-error, .woocommerce-info, .woocommerce-message {
+    display: none;
+}
+
+.main-popup div#customer_details {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-popup .woocommerce-billing-fields__field-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-popup .woocommerce-billing-fields__field-wrapper p, .main-popup #order_review, .main-popup .woocommerce-additional-fields {
+    width: 48%;
+}
+
+.main-popup p#billing_country_field {
+    display: none;
+}
+
+.main-popup .payment_box.payment_method_cod {
+    display: none;
+}
+
+.main-popup .col-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-popup .woocommerce .col2-set .col-1, .main-popup .woocommerce-page .col2-set .col-1, .main-popup .woocommerce .col2-set .col-2, .main-popup.woocommerce-page .col2-set .col-2 {
+    width: 100%;
+}
+
+.main-popup .woocommerce-terms-and-conditions-wrapper {
+    display: none;
+}
+
+.main-popup .form-row.place-order {
+    position: fixed;
+    width: 70%;
+    left: 15%;
+    padding: 0 !important;
+    bottom: 8%;
+    margin: 0;
+}
+
+button#place_order {
+    width: 100%;
+    background: #312318;
+    font-family: "Gilroy-Black";
+    font-size: 36px;
+    color: #823426;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 60%);
+}
+
+.header-social:focus i {
+    color: #9d3522;
+}
+
+form.wpcf7-form.init label {
+    width: 100%;
+}
+
+table.variations .value input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+/* Ð´Ð»Ñ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° label ÑÐ²ÑÐ·Ð°Ð½Ð½Ð¾Ð³Ð¾ Ñ .custom-radio */
+table.variations .value input + label {
+    align-items: center;
+    user-select: none;
+}
+
+table.variations .value {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+table.variations .single-list-price {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    background: #191515;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+table.variations .single-list-price p, table.variations .single-list-price span {
+    color: #563f2f;
+    font-family: "MyriadPro-Bold";
+    font-size: 18px;
+}
+
+table.variations .single-weight {
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+table.variations .single-list-price p {
+    text-transform: uppercase;
+}
+
+table.variations .put-price {
+    color: #fff !important;
+    font-size: 24px !important;
+}
+
+table.variations .value .single-weight {
+    border: 5px solid #0c0808;
+    padding: 10px 20px;
+    line-height: 1.1;
+    font-family: "MyriadPro-Bold";
+    font-size: 26px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+table.variations .value .single-weight.fill {
+    background: #191515;
+}
+
+/*table.variations .value div:after {*/
+/*content: "ÐºÐ³";*/
+/*position: absolute;*/
+/*right: 4px;*/
+/*top: 2px;*/
+/*font-family: "MyriadPro-Bold";*/
+/*font-size: 16px;*/
+/*color: #db2b0c;*/
+/*}*/
+table.variations .value div label {
+    cursor: pointer;
+}
+
+.description-right-area a.reset_variations {
+    display: none;
+}
+
+/*.description-right-area .single_variation_wrap{*/
+/*    position: relative;*/
+/*}*/
+.description-right-area .woocommerce-variation.single_variation {
+    display: none !important;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: "MyriadPro-Bold";
+    font-size: 36px;
+    color: #fff;
+}
+
+.list-price {
+    display: none;
+    position: absolute;
+}
+
+.description-right-area td.label {
+    display: none;
+}
+
+.description-right-area .woocommerce-variation-price:after {
+    content: "Ð³Ñ€Ð½";
+    margin-left: 10px;
+}
+
+.buy-area-wrapper {
+    position: relative;
+}
+
+.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-enabled {
+    display: flex;
+    /*margin-top: 20px;*/
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+table.variations {
+    width: 100%;
+}
+
+.woocommerce table.shop_table, .woocommerce table.shop_table td, .woocommerce table.shop_table tbody th, .woocommerce table.shop_table tfoot td, .woocommerce table.shop_table tfoot th {
+    border-color: transparent;
+}
+
+.cover-plus-minus {
+    display: flex;
+}
+
+a.toggle-quantity {
+    display: none;
+}
+
+a.close-pack-overlay {
+    display: none;
+}
+
+.choose-pack {
+    display: none;
+}
+
+article#post-9 {
+    color: #fff;
+}
+
+.woocommerce-order {
+    padding: 0 10%;
+}
+
+.button-validate {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    animation: 0;
+    z-index: 1000;
+}
+
+.woocommerce-billing-fields__field-wrapper .input-text.wrong {
+    border: 2px solid red;
+}
+
+.description-right-area.outofstock {
+    position: relative;
+}
+
+.description-right-area.outofstock:before {
+    content: "";
+    background: url(../eco-worms/img/outofstock.png) no-repeat;
+    background-size: contain;
+    display: block;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    left: 40%;
+}
+
+.outofstock .hrn p{
+    display: none;
+}
+
+.put-quantity-worm.sale, .hrn p {
+    position: relative;
+}
+
+.put-quantity-worm.sale, .hrn p {
+    color: #d7d7b8 !important;
+    font-family: 'MyriadPro-Regular' !important;
+    margin-right: 20px !important;
+    font-size: 22px !important;
+}
+
+.put-quantity-worm.sale:after, .hrn p:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    transform: rotate(14deg);
+    top: 48%;
+}
+
+.hrn {
+    display: flex;
+    position: relative;
+}
+
+.hrn p {
+    color: #d7d7b8;
+    font-family: 'MyriadPro-Regular';
+    margin-right: 20px;
+    font-size: 22px;
 }
