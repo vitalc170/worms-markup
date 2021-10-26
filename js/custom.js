@@ -90,19 +90,19 @@ $(document).ready(function () {
             992: {
                 items: 3,
                 nav: false,
-                navText: ["<img src=\"" + document.location.origin + "img/nav-prev.png\">", "<img src=\"" + document.location.origin + "img/nav-next.png\">"],
+                navText: ["<img src=\"img/nav-prev.png\">", "<img src=\"img/nav-next.png\">"],
                 margin: 80,
             },
             768: {
                 items: 2,
                 nav: true,
-                navText: ["<img src=\"" + document.location.origin + "img/ar_left.svg\">", "<img src=\"" + document.location.origin + "img/ar_right.svg\">"],
+                navText: ["<img src=\"img/ar_left.svg\">", "<img src=\"img/ar_right.svg\">"],
             },
             0: {
                 items: 1,
                 nav: true,
                 margin: 20,
-                navText: ["<img src=\"" + document.location.origin + "img/ar_left.svg\">", "<img src=\"" + document.location.origin + "img/ar_right.svg\">"],
+                navText: ["<img src=\"img/ar_left.svg\">", "<img src=\"img/ar_right.svg\">"],
             }
         },
     });
@@ -113,7 +113,7 @@ $(document).ready(function () {
         loop: true,
         items: 1,
         nav: true,
-        navText: ["<img src=\"" + document.location.origin + "img/nav-prev.png\">", "<img src=\"" + document.location.origin + "img/nav-next.png\">"],
+        navText: ["<img src=\"img/nav-prev.png\">", "<img src=\"img/nav-next.png\">"],
     });
 
     function incrementValue(e) {
