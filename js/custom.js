@@ -301,7 +301,9 @@ $(document).ready(function () {
     var needetText = $(".mini-cart-header .quantity .quan").text();
     $(".mini-cart-header .quantity").text(needetText);
 
-
+    $('.place_order').click(function (e){
+        e.preventDefault();
+    });
 
 
 
